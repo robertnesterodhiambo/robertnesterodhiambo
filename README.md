@@ -24,9 +24,9 @@
 <!-- Contact Information -->
 <h3 align="center">📫 How to reach me</h3>
 <p align="center">
-  <a href="mailto:youremail@example.com">Email</a> |
-  <a href="https://linkedin.com/in/robertnesterodhiambo">LinkedIn</a> |
-  <a href="https://twitter.com/yourusername">Twitter</a>
+  <a href="mailto:robertnesterodhiambo@gmail.com">Email</a> |
+  <a href="https://www.linkedin.com/in/robert-nestar-odhiambo-094422237/">LinkedIn</a> |
+  <a href="https://x.com/RstudioStat">Twitter</a>
 </p>
 
 <!-- GitHub Stats -->
