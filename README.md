@@ -13,7 +13,10 @@
   <img src="https://img.shields.io/badge/-CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
   <img src="https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
   <img src="https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/-R-276DC3?style=flat-square&logo=r&logoColor=white" />
+  <img src="https://img.shields.io/badge/-Machine%20Learning-FF6F00?style=flat-square" />
 </p>
+
 
 <!-- Projects Section -->
 <h3 align="center">🚀 Projects</h3>
