@@ -52,9 +52,13 @@
 </p>
 
 <script>
-  // Fetching your GitHub repositories using GitHub API
   fetch('https://api.github.com/users/robertnesterodhiambo/repos')
-    .then(response => response.json())
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
     .then(repos => {
       const projectsList = document.getElementById('projects-list');
       repos.slice(0, 3).forEach(repo => {
@@ -69,3 +73,4 @@
     })
     .catch(error => console.error('Error fetching GitHub repositories:', error));
 </script>
+
