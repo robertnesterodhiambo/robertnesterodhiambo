@@ -51,26 +51,39 @@
   <img src="https://profile-counter.glitch.me/_robertnesterodhiambo/count.svg" />
 </p>
 
-<script>
-  fetch('https://api.github.com/users/robertnesterodhiambo/repos')
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      return response.json();
-    })
-    .then(repos => {
-      const projectsList = document.getElementById('projects-list');
-      repos.slice(0, 3).forEach(repo => {
-        const listItem = document.createElement('li');
-        const link = document.createElement('a');
-        link.href = repo.html_url;
-        link.textContent = repo.name;
-        listItem.appendChild(link);
-        listItem.innerHTML += ` - ${repo.description || 'No description provided.'}`;
-        projectsList.appendChild(listItem);
-      });
-    })
-    .catch(error => console.error('Error fetching GitHub repositories:', error));
-</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GitHub Repositories</title>
+</head>
+<body>
+  <h2>My GitHub Repositories</h2>
+  <ul id="projects-list"></ul>
+
+  <script>
+    fetch('https://api.github.com/users/robertnesterodhiambo/repos')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(repos => {
+        const projectsList = document.getElementById('projects-list');
+        repos.slice(0, 3).forEach(repo => {
+          const listItem = document.createElement('li');
+          const link = document.createElement('a');
+          link.href = repo.html_url;
+          link.textContent = repo.name;
+          listItem.appendChild(link);
+          listItem.innerHTML += ` - ${repo.description || 'No description provided.'}`;
+          projectsList.appendChild(listItem);
+        });
+      })
+      .catch(error => console.error('Error fetching GitHub repositories:', error));
+  </script>
+</body>
+</html>
 
