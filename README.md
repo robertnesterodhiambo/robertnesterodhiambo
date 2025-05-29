@@ -44,7 +44,7 @@ _👉 More coming soon!_
 
 <p align="center">
   <a href="mailto:robertnesterodhiambo@gmail.com">📧 Email</a> •
-  <a href="https://www.linkedin.com/in/robert-nestar-odhiambo-094422237/">💼 LinkedIn</a> •
+  <a href="https://www.linkedin.com/in/robert-odhiambo-6b63b1356/">💼 LinkedIn</a> •
   <a href="https://x.com/RstudioStat">🐦 Twitter</a>
 </p>
 
